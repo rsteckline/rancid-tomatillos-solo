@@ -15,7 +15,6 @@
 ![Cypress](https://img.shields.io/badge/Cypress-17202C?logo=cypress&logoColor=fff&style=for-the-badge)
 
 # 🧠 Contributors
-[Erica Hagle](https://github.com/ericahagle) &
 [Bobby Steckline](https://github.com/rjsturing)
 
 # 💭 Abstract
