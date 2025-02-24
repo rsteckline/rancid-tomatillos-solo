@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "elMariachi";
+  src: local("elMariachi"),
+    url("./elMariachi.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

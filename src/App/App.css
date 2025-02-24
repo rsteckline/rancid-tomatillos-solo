@@ -1,0 +1,117 @@
+.App {
+  text-align: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, black, #534b7e);
+  padding-top: 10px;
+}
+
+header a,
+header a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-title {
+  color: white;
+  margin-left: -10px;
+  margin-top: 25px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
+}
+
+.header-title h1 {
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-family: 'elMariachi', sans-serif;
+  transition: text-shadow 0.1s ease-in-out;
+}
+
+.header-title h1:hover {
+  color: #D0A9F5;
+  text-shadow:
+    0 0 5px #278140,
+    0 0 20px #A23BEF,
+    0 0 35px #A23BEF,
+    0 0 40px #A23BEF,
+    0 0 50px #A23BEF;
+}
+
+body {
+  background-color: #534b7e;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.logo img {
+  max-width: 30px;
+  margin-right: 10px;
+  margin-top: -5px;
+}
+
+h1 {
+  color: white;
+}
+
+.error-message {
+  color: red;
+  margin: 20px;
+  font-size: 2em;
+}
+
+@media screen and (min-width: 1536px) {
+  .logo img {
+    max-width: 84px;
+  }
+
+  .header-title h1 {
+    font-size: 84px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1535px) {
+  .logo img {
+    max-width: 72px;
+  }
+
+  .header-title h1 {
+    font-size: 72px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .logo img {
+    max-width: 60px;
+  }
+
+  .header-title h1 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .logo img {
+    max-width: 48px;
+  }
+
+  .header-title h1 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .logo img {
+    max-width: 36px;
+  }
+
+  .header-title h1 {
+    font-size: 36px;
+  }
+}

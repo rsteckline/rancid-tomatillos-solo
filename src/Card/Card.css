@@ -1,0 +1,62 @@
+.card {
+  box-sizing: border-box;
+  border: none;
+  overflow: visible;
+  box-shadow: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.movie-poster {
+  width: 100%;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, .75);
+  transition: transform 0.3s ease;
+}
+
+.movie-title-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #8ab659;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  transform: translateY(100%);
+  font-family: 'elMariachi', sans-serif;
+}
+
+.movie-title-overlay h3 {
+  margin: 0;
+  font-size: 1.5em;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.card:hover .movie-title-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:hover .movie-poster {
+  transform: scale(1.03);
+  z-index: 10;
+  animation: wiggleEnlarge 0.3s ease-in-out;
+}
+
+@keyframes wiggleEnlarge {
+  0% {
+    transform: scale(1.03) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.03) rotate(-1deg);
+  }
+  75% {
+    transform: scale(1.03) rotate(1deg);
+  }
+  100% {
+    transform: scale(1.03) rotate(0deg);
+  }
+}

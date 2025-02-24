@@ -1,0 +1,159 @@
+.movie-detail {
+  display: flex;
+  align-items: flex-start;
+  padding: 40px;
+  min-height: calc(100vh - 70px);
+  position: relative;
+}
+
+.movie-detail .left-side {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.movie-detail .right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.movie-detail .right-side h3 {
+  margin-top: 0px;
+  margin-bottom: -15px;
+  font-size: 48px;
+}
+
+.movie-detail .right-side h2 {
+  font-size: 30px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.movie-detail .right-side h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.movie-detail .right-side p {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.custom-font {
+  font-family: 'elMariachi', sans-serif;
+}
+
+.tomatillo-icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.synopsis-container {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.movie-detail .right-side .synopsis-container p {
+  text-align: left;
+  font-size: 32px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.movie-detail .right-side .synopsis-container h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.movie-detail .poster {
+  max-width: 70%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.poster {
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, .75);
+}
+
+.movie-detail .back-button {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  margin-top: 60px;
+  margin-left: 50px;
+}
+
+.movie-detail img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.back-button {
+  padding: 20px 30px;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.show-selected {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+}
+
+.show-selected::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    rgba(76, 0, 130, 0.7),
+    rgba(0, 0, 0, 0.6)
+  );
+  opacity: 0.8;
+  z-index: 1;
+  backdrop-filter: blur(2px);
+}
+
+.show-selected>* {
+  position: relative;
+  z-index: 2;
+}
+
+.back-button:hover {
+  background-color: rgba(65, 158, 79, 0.427);
+}
+
+@media screen and (max-width: 768px) {
+  .movie-detail {
+    flex-direction: column;
+  }
+
+  .movie-detail .left-side,
+  .movie-detail .right-side {
+    flex: none;
+    width: 100%;
+    padding-right: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .movie-detail .right-side {
+    margin-top: 20px;
+  }
+
+  .synopsis-container {
+    text-align: left;
+  }
+}
